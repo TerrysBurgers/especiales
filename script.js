@@ -4,7 +4,7 @@ const CONFIG = {
   EMAILJS_PUBLIC_KEY: "TU_PUBLIC_KEY_DE_EMAILJS",
   EMAILJS_SERVICE_ID: "TU_SERVICE_ID_EMAILJS",
   EMAILJS_TEMPLATE_ID: "TU_TEMPLATE_ID_EMAILJS",
-  SHEET_WEBAPP_URL: "https://script.google.com/macros/s/AKfycbwcbE-dKAqT95Z0EoJ8hKNkgZ4nj4MXz4o7mICCT5mqs1I77lRoYN4fb-uZn6P0Aen4/exec" // URL del desplegado de Apps Script (doPost)
+  SHEET_WEBAPP_URL: "https://script.google.com/macros/s/AKfycbyTBXrqqBvnEi6q-w2dC1t2qVk8Xurjn2zrR5bDDxR5Xnjj2af196jGbytZb2POfv3e/exec" // URL del desplegado de Apps Script (doPost)
 };
 
 // Inicializa EmailJS
