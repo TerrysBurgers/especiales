@@ -84,7 +84,7 @@ $("#consent").addEventListener("change", (e) => {
 async function saveVoteToSupabase(payload) {
   const url = `${CONFIG.SUPABASE_URL}/rest/v1/votes`;
 
-  const res = await fetch(url, {
+  const res = await fetch(`${CONFIG.SUPABASE_URL}/rest/v1/NOMBRE_DE_TU_TABLA`, {
     method: "POST",
     headers: {
       "apikey": CONFIG.SUPABASE_KEY,
