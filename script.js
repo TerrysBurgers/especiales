@@ -68,10 +68,20 @@ form.addEventListener("submit", async (e) => {
   try {
     // Enviar datos al Google Sheet usando NoCodeAPI
     const res = await fetch(CONFIG.SHEET_WEBAPP_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    });
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    data: [
+      [
+        new Date().toISOString(),
+        email,
+        selectedBurger,
+        voteId,
+        navigator.userAgent
+      ]
+    ]
+  })
+});
 
     if (!res.ok) throw new Error("Error al enviar datos a Sheets");
     const data = await res.json();
