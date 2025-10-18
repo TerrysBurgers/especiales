@@ -125,19 +125,20 @@ $("#form").addEventListener("submit", async (e) => {
   }
 
   // Enviar e-mail con EmailJS
-  let mailed = false;
-  try {
-    if (emailjs && CONFIG.EMAILJS_TEMPLATE_ID !== "TU_TEMPLATE_ID_EMAILJS") {
-      await emailjs.send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_TEMPLATE_ID, {
-        to_email: state.email,
-        burger: state.burger,
-        voteId: state.voteId
-      });
-      mailed = true;
-    }
-  } catch (err) {
-    console.error(err);
+let mailed = false;
+try {
+  if (emailjs && CONFIG.EMAILJS_TEMPLATE_ID !== "TU_TEMPLATE_ID_EMAILJS") {
+    await emailjs.send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_TEMPLATE_ID, {
+      to_email: state.email,
+      burger: state.burger,
+      voteId: state.voteId
+    });
+    mailed = true;
+    console.log("✅ Email enviado a:", state.email);
   }
+} catch (err) {
+  console.error("❌ Error al enviar e-mail:", err);
+}
 
   // UI éxito
   if (saved) {
