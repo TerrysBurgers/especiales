@@ -7,7 +7,7 @@ const CONFIG = {
   EMAILJS_SERVICE_ID: "TU_SERVICE_ID_EMAILJS",
   EMAILJS_TEMPLATE_ID: "TU_TEMPLATE_ID_EMAILJS",
   SUPABASE_URL: "https://uprtbrtrdmligakzssoy.supabase.co", // <--- URL del proyecto Supabase
-  SUPABASE_KEY: "TU_ANON_PUBLIC_KEY"               // <--- anon public key desde Settings → API
+  SUPABASE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVwcnRicnRyZG1saWdha3pzc295Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA3MzM5MzMsImV4cCI6MjA3NjMwOTkzM30.sLemQ_SxELedOjzYy_DVHcq20kM1dRvkWklyQUJABBA"               // <--- anon public key desde Settings → API
 };
 
 // Inicializa EmailJS
