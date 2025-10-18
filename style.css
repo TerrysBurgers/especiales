@@ -2,7 +2,7 @@
 :root{
   --bg:#fff;
   --fg:#111;
-  --muted:#666;
+  --muted:#4e4e4e;
   --accent:#000;
   --card:#f7f7f7;
   --ok:#0a0;
@@ -28,7 +28,7 @@ body{
 .container{max-width:1080px; margin-inline:auto-fit; padding:5px}
 
 header .sub {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Rubik', sans-serif;
   font-size: 17px;
   font-weight: 400;
   color: var(--muted);
@@ -45,12 +45,12 @@ h1 {
   letter-spacing: 1px; /* Espaciado entre letras */
   text-transform: uppercase; /* Pone todo en mayúsculas */
   font-weight: 800; /* Grosor de la fuente */
-  margin: 25px 0 30px;
+  margin: 40px 0 10px;
 }
 
 .card{
   background:var(--card);
-  border:1px solid var(--fg);
+  border:2px solid var(--fg);
   border-radius:var(--radius);
   padding:12px;
   box-shadow: 8px 6px 0 0 var(--fg);
@@ -76,11 +76,20 @@ h1 {
   .choice.active{ background:#111; }
 }
 
-#vote-form h2{ margin-top:7px }
-.label{ display:block; font-weight:600; margin:15px 0 }
+#vote-form h2{ margin-top:0px; 
+font-size:12px; margin:8px 0 0;
+       font-family:'Montserrat', system-ui, -apple-system, 'Rubik', sans-serif;
+       font-size:22px;
+       margin:0px 0px;
+       margin-top: -5px;
+}
+.label{ display:block; font-weight:600;
+font-family:'Montserrat', system-ui, -apple-system, 'Rubik', sans-serif; /* Cambia el tipo de letra */
+      margin-top: 20px;
+}
 input[type="email"]{
   width:100%; padding:12px 14px; font-size:16px;
-  border:2px solid var(--fg); border-radius:12px; background:var(--bg); color:var(--fg)
+  border:2px solid var(--fg); border-radius:12px; background:var(--bg); color:var(--fg); margin:20px 0;
 }
 .consent{ display:flex; align-items:center; gap:10px; margin:10px 0 12px }
 button#submit, .btn{
@@ -88,8 +97,12 @@ button#submit, .btn{
   font-weight:800; background:var(--fg); color:var(--bg); cursor:not-allowed; opacity:0.6
 }
 button#submit.enabled{ cursor:pointer; opacity:1 }
-.helper{ color:var(--muted); margin:8px 0 0 }
-.legal{ color:var(--muted); font-size:12px; margin:8px 0 0 }
+
+.helper{ color:var(--muted); margin:15px 0 0 }
+.legal{font-size:12px; margin:8px 0 0;
+       font-family:'Montserrat', system-ui, -apple-system, 'Rubik', sans-serif;
+       color: var(--muted);
+}
 
 .success.hidden{ display:none }
 .success .btn{ text-decoration:none; cursor:pointer; opacity:1 }
